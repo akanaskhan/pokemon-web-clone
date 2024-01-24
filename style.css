@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 body {
     margin: 0px;
     width: 100%;
@@ -5,7 +9,7 @@ body {
   }
   .header {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.877);
+    background-color: lightgrey;
     border-bottom: 1px solid #dadada;
     display: block;
     text-align: center;
@@ -18,6 +22,11 @@ body {
     box-shadow: 3px 3px rgba(128, 128, 128, 0.4);
     transition: ease 0.6s;
   } */
+  .header > img:hover{
+    animation: shake 0.5s;
+    background-color: white;
+     transition: ease-in-out 0.4s all;
+  }
   .nav-bar {
     width: 100%;
     display: flex;
@@ -27,6 +36,8 @@ body {
     /* background-color: yellow; */
   }
   .nav-bar > .box1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     width: 110px;
     height: 50px;
     text-align: center;
@@ -43,6 +54,8 @@ body {
   .nav-bar > .box2 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -57,6 +70,8 @@ body {
   .nav-bar > .box3 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -71,6 +86,8 @@ body {
   .nav-bar > .box4 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -85,6 +102,8 @@ body {
   .nav-bar > .box5 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -99,6 +118,8 @@ body {
   .nav-bar > .box6 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -113,6 +134,8 @@ body {
   .nav-bar > .box7 {
     width: 110px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: gray;
     padding-top: 55px;
@@ -136,6 +159,7 @@ body {
   .images {
     width: 100%;
     height: 500px;
+    font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
     padding-top: 20px;
@@ -287,7 +311,8 @@ body {
     height: 250px;
   }
   .button {
-    padding-left: 100px;
+    padding-left: 200px;
+    font-family: 'Roboto', sans-serif;
   }
   .button > button {
     background-color: gray;
@@ -299,6 +324,9 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+  .centerimg{
+    font-family: 'Roboto', sans-serif;
   }
   .centerimg > .box1 > h1 {
     color: white;
@@ -436,7 +464,7 @@ body {
     width: 270px;
     height: 310px;
     text-align: center;
-    background-color: rgba(255, 255, 0, 0.726);
+    background-color: #ECB62F;
     border-radius: 10px;
     margin-top: 20px;
   }
@@ -523,6 +551,7 @@ body {
     color: white;
   }
   .lastimg {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -538,10 +567,12 @@ body {
     flex-wrap: wrap;
     padding-top: 30px;
     color: white;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
   .footerlast {
       width: 100%;
+      font-family: 'Roboto', sans-serif;
     background-color: rgba(0, 0, 0, 0.877);
     padding-top: 30px;
     display: flex;
@@ -563,3 +594,18 @@ body {
     color: white;
     font-size: 15px;
   }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
