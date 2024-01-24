@@ -24,6 +24,7 @@ body {
   } */
   .header > img:hover{
     animation: shake 0.5s;
+    animation-iteration-count: infinite;
     background-color: white;
      transition: ease-in-out 0.4s all;
   }
