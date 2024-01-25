@@ -675,10 +675,10 @@ body {
     font-size: 17px;
     color: white;
   }
-  /* .footer > .formleft > button:hover{
-    font-size: 20px;
-    width: 180px;
-    height: 70px;
-  } */
+  .footer > .formleft > button:hover{
+    background-color: rgb(255, 253, 253);
+    color: black;
+    transition: ease-in-out 0.4s all;
+  }
 
   
