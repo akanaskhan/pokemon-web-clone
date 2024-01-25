@@ -35,6 +35,7 @@ body {
     /* position: fixed; */
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
+    z-index: 10;
   }
   .nav-bar > .box1 {
     font-family: 'Roboto', sans-serif;
@@ -183,7 +184,13 @@ body {
   .left > .oneimg > p {
     color: black;
     text-align: center;
-    padding-bottom: 200px;
+    line-height: 1em;
+    /* padding-top: -50px; */
+    /* padding-bottom: 200px; */
+  }
+  .left > .oneimg > h3{
+    margin-top: 17px;
+    line-height: 1em;
   }
   .alg > .twoimg > img {
     border-radius: 10px;
@@ -195,6 +202,11 @@ body {
     background-color: rgba(255, 68, 0, 0.37);
     border-radius: 10px;
     margin-top: 20px;
+  }
+  .alg > .twoimg > h3{
+    /* line-height: 1em; */
+    text-align:center;
+    margin-top: 4px;
   }
   .alg > .threeimg > img {
     border-radius: 10px;
@@ -208,7 +220,8 @@ body {
     margin-top: 20px;
   }
   .alg > .threeimg > h3 {
-    color: black;
+    color: white;
+    margin-top: 10px;
   }
   .right {
     padding-right: 100px;
@@ -226,7 +239,8 @@ body {
   }
   .right > .twoimg > img {
     /* width: 250px; */
-    padding-left: 150px;
+    padding-left: 0px;
+    border-radius: 10px;
   }
   .right > .twoimg {
     width: 270px;
@@ -239,7 +253,8 @@ body {
     /* flex-wrap: wrap; */
   }
   .right > .twoimg > h3 {
-    padding-right: 96px;
+    font-size: 23px;
+    padding-right: 50px;
   }
   .right > .threeimg > img {
     border-radius: 10px;
@@ -307,7 +322,7 @@ body {
     height: 250px;
   }
   .button {
-    padding-left: 200px;
+    padding-left: 300px;
     font-family: 'Roboto', sans-serif;
   }
   .button > button {
@@ -368,7 +383,7 @@ body {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    margin-right: 60px;
+    margin-right: 120px;
   }
   .centrrbutn > button {
     background-color: black;
@@ -529,7 +544,8 @@ body {
     color: white;
   }
   .rightone > .twoimg1 > p {
-    padding-right: 96px;
+    padding-left: 10px;
+    text-align: left;
   }
   .rightone > .threeimg > img {
     border-radius: 10px;
@@ -555,16 +571,25 @@ body {
     align-items: center;
   }
   .footer {
-      width: 100%;
+    width: 100%;
     /* height: 500px; */
     background-color: rgba(0, 0, 0, 0.877);
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    
     padding-top: 30px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+  }
+  .footer > .formleft{
+    width: 50%;
+  }
+  .footer > .formright{
+    width: 50%;
+    font-size: 18px;
+    margin-left: 80px;
+    padding-top: 30px;
+    line-height: 1em;
   }
   .footerlast {
       width: 100%;
@@ -574,13 +599,15 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 20px;
   }
   .onecompany {
     color: white;
-    font-size: 15px;
+    font-size: 12px;
+    margin-left: 350px;
   }
   .footericontwo > img {
-    width: 40px;
+    width: 35px;
   }
   .footerthree > img {
     width: 200px;
@@ -588,7 +615,8 @@ body {
   }
   .footerthree {
     color: white;
-    font-size: 15px;
+    font-size: 12px;
+    margin-right: 350px;
   }
 
   @keyframes shake {
@@ -604,4 +632,53 @@ body {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+  .footer > .formleft > h1{
+    width: 350px;
+    font-size: 23px;
+    margin-left: 360px;
+  }
+  .footer > .formleft > .email> input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-left: 360px;
+    border-radius: 6px;
+    width: 420px;
+    height: 40px;
+  }
+  .footer > .formleft > select{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    margin-left: 360px;
+    border-radius: 6px;
+    width: 210px;
+    height: 40px;
+    
+  }
+  .footer > .formleft > input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+  }
+  .footer > .formleft > button{
+    background-color: gray;
+    border-radius: 6px;
+    margin-left: 360px;
+    width: 140px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 17px;
+    color: white;
+  }
+  /* .footer > .formleft > button:hover{
+    font-size: 20px;
+    width: 180px;
+    height: 70px;
+  } */
+
   
